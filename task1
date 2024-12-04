@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/14084e89f0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+<div class="container">
+    <nav>
+        <h1>Sanjana Upadhyay</h1><br>
+        
+        <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+           
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+       
+           
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    
+        
+    </nav>
+    <div class="header-text">
+        <p>web developer</p>
+        <h1>hi, I'm <span>Sanjana</span><br>from india</h1>
+
+    </div>
+</div>
+</div>
+<!-----------------------------about--------------------------->
+   <div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="myimg1.jpg">
+            </div>
+            <div class="about-col-1">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is Sanjana Upadhyay. I am currently in the final year of my Bachelor of Technology (B.Tech) program in the Computer Science and Engineering (CSE) department at Pallavi Engineering College, which is affiliated with Jawaharlal Nehru Technological University, Hyderabad (JNTUH).</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">experience</p>
+                    <p class="tab-links" onclick="opentab('education')">education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>web developer</span><br>frontend and backend</li>
+                        <li><span>frontend developer</span><br>html and css</li>
+                        <li><span>backend developer</span><br>python and js</li>
+                    </ul>
+                       
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>nov-dec</span><br>internship at codtech</li>
+                        <li><span>oct-nov</span><br>internship at codsoft</li>
+                        <li><span>sept-oct</span><br>internship at websitemaker</li>
+                    </ul>
+                       
+                </div>
+            </div> 
+    </div>
+   </div> 
+<!-------------------------portfolio----------------------------->
+  <div class="container">
+    <h1 class="sub-title">My work</h1>
+    <div class="work-list">
+        <div class="experience">
+            <img src="Screenshot (8).png"><br>
+            <div class="layer">
+                <h3>Ecommerce Website</h3>
+                <p>A shoping website specially for fashion</p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+        <div class="experience">
+            <img src="Screenshot (2).png"><br>
+            <div class="layer">
+                <h3>voting Website</h3>
+                <p>A shoping website specially for fashion</p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+        <div class="experience">
+            <img src="Screenshot (2).png"><br>
+            <div class="layer">
+                <h3>voting Website</h3>
+                <p>A shoping website specially for fashion</p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+  </div>
+<!--------------------contact------------------------->
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+               <h1 class="sub-title">Contact Me</h1> 
+               <P><i class="fa-solid fa-share-nodes"></i>upadhyaysanjana14@gmail.com</P>
+               <p><i class="fa-solid fa-phone"></i>6305186792</p>
+               <div class="social-icons">
+                
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+               </div>
+               <a href="my cv.pdf"download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © sanjana upadhyay.My Portfolio</p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+           
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+           
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+</html>
