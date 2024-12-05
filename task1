@@ -19,11 +19,11 @@
            
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
-            <i class="fas fa-times" onclick="closemenu()"></i>
+           
        
            
         </ul>
-        <i class="fas fa-bars" onclick="openmenu()"></i>
+       
     
         
     </nav>
@@ -51,17 +51,25 @@
                 </div>
                 <div class="tab-contents active-tab" id="Skills">
                     <ul>
-                        <li><span>web developer</span><br>frontend and backend</li>
-                        <li><span>frontend developer</span><br>html and css</li>
-                        <li><span>backend developer</span><br>python and js</li>
+                        <li><span>Web Developer</span><br>Frontend and Backend</li>
+                        <li><span>Frontend Developer</span><br>html and css</li>
+                        <li><span>Backend Developer</span><br>python and js</li>
                     </ul>
                        
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>nov-dec</span><br>internship at codtech</li>
-                        <li><span>oct-nov</span><br>internship at codsoft</li>
-                        <li><span>sept-oct</span><br>internship at websitemaker</li>
+                        <li><span>Nov-Dec</span><br>Internship at codtech</li>
+                        <li><span>Oct-Nov</span><br>Internship at codsoft</li>
+                        <li><span>Sept-Oct</span><br>Internship at websitemaker</li>
+                    </ul>
+                       
+                </div>
+                <div class="tab-contents " id="education">
+                    <ul>
+                        <li><span>Btech</span><br>pallavi engineering College</li>
+                        <li><span>Intermediate</span><br>sri gayatri junior College</li>
+                        <li><span>SSC</span><br>sarada vidyalaya high school</li>
                     </ul>
                        
                 </div>
@@ -89,7 +97,7 @@
             </div>
         </div>
         <div class="experience">
-            <img src="Screenshot (2).png"><br>
+            <img src="Screenshot (10).png"><br>
             <div class="layer">
                 <h3>voting Website</h3>
                 <p>A shoping website specially for fashion</p>
@@ -163,3 +171,4 @@
 
 </body>
 </html>
+  
